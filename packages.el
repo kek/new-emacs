@@ -16,7 +16,7 @@
 
 (straight-use-package 'use-package)
 
-(use-package which-key :straight t)
+(use-package which-key :straight t :config (which-key-mode 1))
 
 (use-package doom-themes
   :straight t
