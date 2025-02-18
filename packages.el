@@ -36,3 +36,8 @@
   (doom-themes-treemacs-config)
   ;; Corrects (and improves) org-mode's native fontification.
   (doom-themes-org-config))
+
+(use-package magit :straight t)
+
+(use-package vertico :straight t
+  :config (vertico-mode 1))
