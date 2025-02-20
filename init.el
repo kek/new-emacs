@@ -1,5 +1,8 @@
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
+(defun my/set-font ()
+  (set-frame-font "Hack Nerd Font Mono" nil t)
+  (set-face-attribute 'default nil :font "Hack Nerd Font Mono" :height 150))
 
 (defun my/load-file (file)
   (let ((path (concat user-emacs-directory file)))
@@ -9,10 +12,6 @@
 
 (my/load-file "packages.el")
 (my/load-file "os.el")
-
-(set-frame-font "Hack Nerd Font Mono" nil t)
-(set-face-attribute 'default nil :font "Hack Nerd Font Mono" :height 150)
-
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
