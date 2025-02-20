@@ -7,7 +7,7 @@
 (load (concat user-emacs-directory "packages.el"))
 
 (set-frame-font "Hack Nerd Font Mono" nil t)
-(set-face-attribute 'default nil :font "Hack Nerd Font Mono" :height 140)
+(set-face-attribute 'default nil :font "Hack Nerd Font Mono" :height 150)
 
 
 (custom-set-variables
