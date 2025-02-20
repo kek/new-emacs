@@ -1,14 +1,14 @@
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 
-(defun init/load-file (file)
+(defun my/load-file (file)
   (let ((path (concat user-emacs-directory file)))
     (if (file-exists-p path)
 	(load path)
       (message "%s not found" path))))
 
-(init/load-file "packages.el")
-(init/load-file "os.el")
+(my/load-file "packages.el")
+(my/load-file "os.el")
 
 (set-frame-font "Hack Nerd Font Mono" nil t)
 (set-face-attribute 'default nil :font "Hack Nerd Font Mono" :height 150)

@@ -26,6 +26,8 @@
   (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
         doom-themes-enable-italic t) ; if nil, italics is universally disabled
   (load-theme 'doom-moonlight t)
+  (set-frame-font "Hack Nerd Font Mono" nil t)
+  (set-face-attribute 'default nil :font "Hack Nerd Font Mono" :height 150)
 
   ;; Enable flashing mode-line on errors
   (doom-themes-visual-bell-config)
