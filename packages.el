@@ -16,7 +16,8 @@
 
 (straight-use-package 'use-package)
 
-(use-package which-key :straight t :config (which-key-mode 1))
+(use-package which-key :straight t
+  :config (which-key-mode 1))
 
 (use-package doom-themes
   :straight t
@@ -37,6 +38,10 @@
   (doom-themes-treemacs-config)
   ;; Corrects (and improves) org-mode's native fontification.
   (doom-themes-org-config))
+
+(use-package exec-path-from-shell :straight t
+  :config (progn
+	    (exec-path-from-shell-initialize)))
 
 (use-package magit :straight t)
 
