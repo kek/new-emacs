@@ -1,6 +1,7 @@
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 (setq inhibit-splash-screen t)
+(global-hl-line-mode 1)
 
 (defun my/set-font ()
   (set-frame-font "Hack Nerd Font Mono" nil t)
@@ -14,6 +15,7 @@
 
 (my/load-file "packages.el")
 (my/load-file "os.el")
+(my/load-file "keys.el")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
