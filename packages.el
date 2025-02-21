@@ -47,3 +47,21 @@
 
 (use-package vertico :straight t
   :config (vertico-mode 1))
+
+(use-package lsp-mode :straight t
+  :hook ((elixir-mode . lsp)
+	 (erlang-mode . lsp)
+	 (lua-mode . lsp)
+	 (go-mode . lsp))
+  :init
+  ;; https://emacs.stackexchange.com/questions/81247/with-lsp-mode-why-do-i-get-an-unknown-notification-about-refreshed-rules-from-s
+  (with-eval-after-load 'lsp-mode
+    (defun my/lsp-ignore-semgrep-rulesRefreshed (workspace notification)
+      "Ignore semgrep/rulesRefreshed notification."
+      (when (equal (gethash "method" notification) "semgrep/rulesRefreshed")
+	;;(lsp--info "Ignored semgrep/rulesRefreshed notification")
+	t)) ;; Return t to indicate the notification is handled
+    (advice-add 'lsp--on-notification :before-until #'my/lsp-ignore-semgrep-rulesRefreshed))
+  (setq lsp-keymap-prefix "C-c l"))
+
+(use-package lsp-ui :straight t)
