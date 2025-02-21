@@ -65,9 +65,21 @@
   (setq lsp-keymap-prefix "C-c l"))
 
 (use-package lsp-ui :straight t)
+  
 (use-package company :straight t
   :init (global-company-mode))
 
 (use-package go-mode :straight t)
 
 (setq scroll-conservatively 1)
+
+;; https://github.com/oantolin/orderless
+;; https://github.com/minad/vertico
+(use-package orderless :straight t
+  :custom
+  ;; Configure a custom style dispatcher (see the Consult wiki)
+  ;; (orderless-style-dispatchers '(+orderless-consult-dispatch orderless-affix-dispatch))
+  ;; (orderless-component-separator #'orderless-escapable-split-on-space)
+  (completion-styles '(orderless basic substring partial-completion flex))
+  (completion-category-defaults nil)
+  (completion-category-overrides '((file (styles partial-completion)))))
