@@ -65,3 +65,5 @@
   (setq lsp-keymap-prefix "C-c l"))
 
 (use-package lsp-ui :straight t)
+(use-package company :straight t
+  :init (global-company-mode))
