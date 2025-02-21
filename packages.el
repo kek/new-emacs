@@ -69,3 +69,5 @@
   :init (global-company-mode))
 
 (use-package go-mode :straight t)
+
+(setq scroll-conservatively 1)
