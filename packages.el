@@ -67,3 +67,5 @@
 (use-package lsp-ui :straight t)
 (use-package company :straight t
   :init (global-company-mode))
+
+(use-package go-mode :straight t)
