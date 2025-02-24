@@ -14,7 +14,9 @@
           mac-option-modifier 'none
 	  insert-directory-program "/opt/homebrew/bin/gls")
     (my/fix-mac-unicode)
-    (add-hook 'emacs-startup-hook #'my/fix-mac-unicode)))
+    (add-hook 'emacs-startup-hook #'my/fix-mac-unicode)
+    (setq mac-command-modifier 'meta)
+    (setq mac-control-modifier 'control)))
  ((eq system-type 'gnu/linux)
   (progn
     (set-frame-font "Hack Nerd Font Mono 12" nil t)
