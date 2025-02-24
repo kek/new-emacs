@@ -18,4 +18,4 @@
  ((eq system-type 'gnu/linux)
   (progn
     (set-frame-font "Hack Nerd Font Mono 12" nil t)
-    )))
+    (menu-bar-mode -1))))
