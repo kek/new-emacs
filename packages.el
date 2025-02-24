@@ -83,3 +83,7 @@
   (completion-styles '(orderless basic substring partial-completion flex))
   (completion-category-defaults nil)
   (completion-category-overrides '((file (styles partial-completion)))))
+
+(use-package deft :straight t
+  :init
+  (setq deft-directory "~/Documents/org/pages"))
