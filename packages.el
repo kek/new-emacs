@@ -87,5 +87,8 @@
 (use-package deft :straight t
   :init
   (setq deft-directory "~/Documents/org/pages"))
+
+(use-package lua-mode :straight t)
+
 (use-package multiple-cursors :straight t)
 
