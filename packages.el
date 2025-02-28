@@ -87,3 +87,5 @@
 (use-package deft :straight t
   :init
   (setq deft-directory "~/Documents/org/pages"))
+(use-package multiple-cursors :straight t)
+
