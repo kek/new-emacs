@@ -4,3 +4,5 @@
 /elpa
 /transient
 /session.*
+/eshell/
+/projects
