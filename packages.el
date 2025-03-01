@@ -147,9 +147,16 @@ targets."
               :around #'embark-hide-which-key-indicator))
 
 (use-package embark-consult
-  :straight
+  :straight t
   :hook
   (embark-collect-mode . consult-preview-at-point-mode))
 
 (use-package projectile :straight t)
+
+(use-package smooth-scroll :straight t
+  :init
+  ;;(setq scroll-step 0)
+  (setq scroll-conservatively 101)
+  (global-set-key (kbd "C-M-v") #'smooth-scroll/orig-scroll-other-window)
+  (global-set-key (kbd "C-S-M-v") #'smooth-scroll/orig-scroll-other-window-down))
 
