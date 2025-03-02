@@ -16,8 +16,10 @@
     (my/fix-mac-unicode)
     (add-hook 'emacs-startup-hook #'my/fix-mac-unicode)
     (setq mac-command-modifier 'meta)
-    (setq mac-control-modifier 'control)))
+    (setq mac-control-modifier 'control)
+    (menu-bar-mode +1)))
  ((eq system-type 'gnu/linux)
   (progn
     (set-frame-font "Hack Nerd Font Mono 12" nil t)
-    (menu-bar-mode -1))))
+    (menu-bar-mode -1))
+  ))

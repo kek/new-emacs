@@ -1,4 +1,5 @@
 (tool-bar-mode -1)
+(menu-bar-mode -1)
 (scroll-bar-mode -1)
 (setq inhibit-splash-screen t)
 (global-hl-line-mode 1)
@@ -16,6 +17,7 @@
 (my/load-file "packages.el")
 (my/load-file "os.el")
 (my/load-file "keys.el")
+;;(setq default-frame-alist '((width . 80) (height . 55) (menu-bar-lines . 1)))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
