@@ -154,7 +154,8 @@ targets."
 (use-package projectile :straight t)
 
 (use-package smooth-scroll :straight t
-  :init
+  :config
+  (smooth-scroll-mode)
   ;;(setq scroll-step 0)
   (setq scroll-conservatively 101)
   (global-set-key (kbd "C-M-v") #'smooth-scroll/orig-scroll-other-window)
