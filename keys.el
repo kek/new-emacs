@@ -12,3 +12,22 @@
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+
+
+(defvar my/theme 'dark)
+
+(defun my/dark-theme ()
+  (load-theme 'doom-wilmersdorf t)
+  (setq my/theme 'dark))
+
+(defun my/light-theme ()
+  (load-theme 'doom-earl-grey t)
+  (setq my/theme 'light))
+
+(defun my/toggle-theme () (interactive)
+  (cond ((eq my/theme 'light)
+	 (my/dark-theme))
+	((eq my/theme 'dark)
+	 (my/light-theme))))
+
+(global-set-key (kbd "C-<f12>") #'my/toggle-theme)
