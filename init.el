@@ -6,7 +6,7 @@
 
 (defun my/set-font ()
   (set-frame-font "Hack Nerd Font Mono" nil t)
-  (set-face-attribute 'default nil :font "Hack Nerd Font Mono" :height 150))
+  (set-face-attribute 'default nil :font "Hack Nerd Font Mono" :height 120))
 
 (defun my/load-file (file)
   (let ((path (concat user-emacs-directory file)))
