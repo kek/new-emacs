@@ -35,5 +35,8 @@
  ;; If there is more than one, they won't work right.
  )
 
+(add-to-list 'auto-mode-alist '("\\.kdl\\'" . prog-mode))
+(add-to-list 'auto-mode-alist '("\\.jsonc\\'" . js-json-mode))
+
 (server-start)
 (require 'org-protocol)
