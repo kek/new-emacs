@@ -1,3 +1,4 @@
-* To do for this Emacs configuration
+* To do for this [[file:keys.el::global-set-key (kbd "<f5>") #'deft][Emacs configuration]]
 ** Ligatures
-** 
+** Emacs from scratch
+
