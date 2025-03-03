@@ -64,7 +64,9 @@
 	;;(lsp--info "Ignored semgrep/rulesRefreshed notification")
 	t)) ;; Return t to indicate the notification is handled
     (advice-add 'lsp--on-notification :before-until #'my/lsp-ignore-semgrep-rulesRefreshed))
-  (setq lsp-keymap-prefix "C-c l"))
+  (setq lsp-keymap-prefix "C-c l")
+  :hook
+  (lsp-mode . lsp-enable-which-key-integration))
 
 (use-package lsp-ui :straight t)
   
