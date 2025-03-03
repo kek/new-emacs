@@ -1,5 +1,6 @@
 (global-set-key (kbd "<f5>") #'deft)
 (global-set-key (kbd "<f6>") #'magit-status)
+(global-set-key (kbd "<f7>") #'recentf)
 (global-set-key (kbd "<f8>")
 		(lambda () "Open todo file" (interactive)
 		  (find-file (concat user-emacs-directory "todo.org"))))
