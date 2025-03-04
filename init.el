@@ -58,6 +58,7 @@
 
 (add-hook 'prog-mode-hook (lambda () (setq truncate-lines 1)))
 (add-hook 'org-mode-hook (lambda () (visual-line-mode 1)))
+(add-hook 'deft-mode-hook (lambda () (truncate-lines -1)))
 
 (unless (server-running-p)
   (server-start))
