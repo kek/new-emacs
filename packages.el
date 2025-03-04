@@ -75,6 +75,8 @@
 
 (use-package go-mode :straight t)
 
+(use-package elixir-mode :straight t)
+
 (setq scroll-conservatively 1)
 
 ;; https://github.com/oantolin/orderless
