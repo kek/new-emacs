@@ -44,7 +44,6 @@
 	 (file+headline ,(concat my/org-directory "/" "notes.org") "Inbox")
 	 "* %? %U"
 	 :prepend t
-	 :jump-to-captured t
 	 )
 	("L" "Protocol Link" entry
 	 (file+headline ,(concat my/org-directory "/" "notes.org") "Inbox")
