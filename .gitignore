@@ -6,3 +6,8 @@
 /session.*
 /eshell/
 /projects
+/.cache
+/bookmarks
+/history
+/places
+/projectile-bookmarks.eld
