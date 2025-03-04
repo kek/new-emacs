@@ -13,8 +13,9 @@
 (global-set-key (kbd "M-<f12>") #'recentf)
 (global-set-key (kbd "S-<f12>") #'projectile-switch-project)
 (global-set-key (kbd "<f12>") #'projectile-find-file-dwim)
+(global-set-key (kbd "C-<f12>") #'projectile-invalidate-cache)
 
-(global-set-key (kbd "C-<f12>") #'my/toggle-theme)
+(global-set-key (kbd "C-<f5>") #'my/toggle-theme)
 
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
 
