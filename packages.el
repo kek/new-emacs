@@ -167,6 +167,9 @@ targets."
   :init (yas-global-mode 1))
 
 (use-package flycheck :straight t)
+
+(use-package fish-mode :straight t)
+
 (use-package ts :straight t)
 
 (use-package tree-sitter :straight t)
