@@ -32,6 +32,8 @@
 
 (add-to-list 'auto-mode-alist '("\\.kdl\\'" . prog-mode))
 (add-to-list 'auto-mode-alist '("\\.jsonc\\'" . js-json-mode))
+(add-to-list 'auto-mode-alist '("\\.ts\\'" . typescript-ts-mode))
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js-ts-mode))
 
 (require 'org-protocol)
 
