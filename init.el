@@ -41,6 +41,27 @@
 (add-to-list 'auto-mode-alist '("\\.jsonc\\'" . js-json-mode))
 
 (require 'org-protocol)
+
+(setq my/home-directory (getenv "HOME"))
+(setq my/org-directory (concat my/home-directory "/Documents/org/pages"))
+
+(setq org-capture-templates
+      `(
+	("n" "Note" entry
+	 (file+headline ,(concat my/org-directory "/" "notes.org") "Inbox")
+	 "* %? %U"
+	 :prepend t
+	 :jump-to-captured t
+	 )
+	("L" "Protocol Link" entry
+	 (file+headline ,(concat my/org-directory "/" "notes.org") "Inbox")
+	 "* [[%:link][%:description]] %U%?"
+	 :prepend t
+	 :immediate-finish t
+	 :jump-to-captured t)
+	)
+      )
+
 (unless (server-running-p)
   (server-start))
 
