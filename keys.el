@@ -25,11 +25,11 @@
 (defvar my/theme 'dark)
 
 (defun my/dark-theme ()
-  (load-theme 'doom-wilmersdorf t)
+  (load-theme 'doom-moonlight t)
   (setq my/theme 'dark))
 
 (defun my/light-theme ()
-  (load-theme 'doom-earl-grey t)
+  (load-theme 'leuven t)
   (setq my/theme 'light))
 
 (defun my/toggle-theme () (interactive)
@@ -37,5 +37,3 @@
 	 (my/dark-theme))
 	((eq my/theme 'dark)
 	 (my/light-theme))))
-
-(global-set-key (kbd "C-<f12>") #'my/toggle-theme)
