@@ -90,9 +90,7 @@
   (completion-category-defaults nil)
   (completion-category-overrides '((file (styles partial-completion)))))
 
-(use-package deft :straight t
-  :init
-  (setq deft-directory "~/Documents/org/pages"))
+(use-package deft :straight t)
 
 (use-package lua-mode :straight t)
 
@@ -167,3 +165,5 @@ targets."
 
 (use-package yasnippet :straight t
   :init (yas-global-mode 1))
+
+(load "~/.secrets.el")
