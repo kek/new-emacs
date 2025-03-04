@@ -1,12 +1,13 @@
 (global-set-key (kbd "<f5>") #'deft)
 (global-set-key (kbd "<f6>") #'magit-status)
-(global-set-key (kbd "<f7>") #'recentf)
 (global-set-key (kbd "<f8>")
 		(lambda () "Open todo file" (interactive)
 		  (find-file (concat user-emacs-directory "todo.org"))))
 (global-set-key (kbd "<f9>")
 		(lambda () "Open init file" (interactive)
 		  (find-file (concat user-emacs-directory "init.el"))))
+(global-set-key (kbd "<M-f12>") #'recentf)
+(global-set-key (kbd "<f12>") #'projectile-find-file-dwim)
 
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
 
