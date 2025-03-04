@@ -40,5 +40,7 @@
 (add-to-list 'auto-mode-alist '("\\.kdl\\'" . prog-mode))
 (add-to-list 'auto-mode-alist '("\\.jsonc\\'" . js-json-mode))
 
-(server-start)
 (require 'org-protocol)
+(unless (server-running-p)
+  (server-start))
+
