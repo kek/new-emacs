@@ -26,23 +26,9 @@
 (my/load-file "packages.el")
 (my/load-file "os.el")
 (my/load-file "keys.el")
-;;(setq default-frame-alist '((width . 80) (height . 55) (menu-bar-lines . 1)))
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-   '("8d3ef5ff6273f2a552152c7febc40eabca26bae05bd12bc85062e2dc224cde9a"
-     default))
- '(make-backup-files nil))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+(setq custom-file (locate-user-emacs-file "custom.el"))
+(load custom-file 'noerror 'nomessage)
 
 (add-to-list 'auto-mode-alist '("\\.kdl\\'" . prog-mode))
 (add-to-list 'auto-mode-alist '("\\.jsonc\\'" . js-json-mode))
