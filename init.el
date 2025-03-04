@@ -3,8 +3,15 @@
 (scroll-bar-mode -1)
 (setq inhibit-splash-screen t)
 (global-hl-line-mode 1)
-(toggle-truncate-lines +1)
- 
+(recentf-mode 1)
+(setq history-length 25)
+(savehist-mode 1)
+(save-place-mode 1)
+(global-auto-revert-mode 1)
+(setq global-auto-revert-non-file-buffers t)
+(global-display-line-numbers-mode 1)
+(global-display-fill-column-indicator-mode 0)
+
 (defun my/set-font ()
   (set-frame-font "Hack Nerd Font Mono" nil t)
   (let ((font-size (if (eq system-type 'darwin) 140 120)))
