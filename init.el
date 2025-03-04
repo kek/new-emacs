@@ -3,7 +3,8 @@
 (scroll-bar-mode -1)
 (setq inhibit-splash-screen t)
 (global-hl-line-mode 1)
-
+(toggle-truncate-lines +1)
+ 
 (defun my/set-font ()
   (set-frame-font "Hack Nerd Font Mono" nil t)
   (let ((font-size (if (eq system-type 'darwin) 140 120)))
