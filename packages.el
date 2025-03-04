@@ -166,4 +166,3 @@ targets."
 (use-package yasnippet :straight t
   :init (yas-global-mode 1))
 
-(load "~/.secrets.el")

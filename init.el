@@ -60,3 +60,4 @@
 (unless (server-running-p)
   (server-start))
 
+(load "~/.secrets.el" 'noerror 'nomessage)
