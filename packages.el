@@ -173,8 +173,6 @@ targets."
 
 (use-package ts :straight t)
 
-(use-package tree-sitter :straight t)
-
 (use-package tree-sitter :straight t
   :config
   (setq treesit-language-source-alist
