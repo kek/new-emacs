@@ -54,7 +54,8 @@
   :hook ((elixir-mode . lsp)
 	 (erlang-mode . lsp)
 	 (lua-mode . lsp)
-	 (go-mode . lsp))
+	 (go-mode . lsp)
+	 (typescript-ts-mode . lsp))
   :init
   ;; https://emacs.stackexchange.com/questions/81247/with-lsp-mode-why-do-i-get-an-unknown-notification-about-refreshed-rules-from-s
   (with-eval-after-load 'lsp-mode
