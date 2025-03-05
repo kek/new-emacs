@@ -35,8 +35,6 @@
 (add-to-list 'auto-mode-alist '("\\.ts\\'" . typescript-ts-mode))
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js-ts-mode))
 
-(require 'org-protocol)
-
 (setq my/home-directory (getenv "HOME"))
 (setq my/org-directory (concat my/home-directory "/Documents/org/pages"))
 
@@ -59,6 +57,8 @@
 (add-hook 'prog-mode-hook (lambda () (setq truncate-lines 1)))
 (add-hook 'org-mode-hook (lambda () (visual-line-mode 1)))
 (add-hook 'deft-mode-hook (lambda () (truncate-lines -1)))
+
+(require 'org-protocol)
 
 (unless (server-running-p)
   (server-start))

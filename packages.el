@@ -158,11 +158,13 @@ targets."
 
 (use-package smooth-scroll :straight t
   :config
-  (smooth-scroll-mode)
-  ;;(setq scroll-step 0)
-  (setq scroll-conservatively 101)
-  (global-set-key (kbd "C-M-v") #'smooth-scroll/orig-scroll-other-window)
-  (global-set-key (kbd "C-S-M-v") #'smooth-scroll/orig-scroll-other-window-down))
+  (if (eq system-type 'darwin)
+      (progn
+        (smooth-scroll-mode)
+        ;;(setq scroll-step 0)
+        (setq scroll-conservatively 101)
+        (global-set-key (kbd "C-M-v") #'smooth-scroll/orig-scroll-other-window)
+        (global-set-key (kbd "C-S-M-v") #'smooth-scroll/orig-scroll-other-window-down))))
 
 (use-package yasnippet :straight t
   :init (yas-global-mode 1))
