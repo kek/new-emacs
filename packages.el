@@ -196,3 +196,5 @@ targets."
   :init
   (global-set-key (kbd "C-=") 'er/expand-region))
 
+(use-package marginalia :straight t
+  :init (marginalia-mode))
