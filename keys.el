@@ -1,21 +1,21 @@
 (global-set-key (kbd "<f6>") #'magit-status)
 
-(global-set-key (kbd "<f8>")
+(global-set-key (kbd "<f7>")
 		(lambda () "Open todo file" (interactive)
 		  (find-file (concat deft-directory "/notes.org"))))
-(global-set-key (kbd "M-<f8>") #'deft)
-(global-set-key (kbd "<f9>") (lambda () "" (interactive) (org-capture nil "n")))
+(global-set-key (kbd "M-<f7>") #'deft)
+(global-set-key (kbd "<f8>") (lambda () "" (interactive) (org-capture nil "n")))
 
 (global-set-key (kbd "<f5>")
 		(lambda () "Open init file" (interactive)
 		  (find-file (concat user-emacs-directory "init.el"))))
-
-(global-set-key (kbd "M-<f12>") #'recentf)
-(global-set-key (kbd "S-<f12>") #'projectile-switch-project)
-(global-set-key (kbd "<f12>") #'projectile-find-file-dwim)
-(global-set-key (kbd "C-<f12>") #'projectile-invalidate-cache)
-
 (global-set-key (kbd "C-<f5>") #'my/toggle-theme)
+
+(global-set-key (kbd "M-<f9>") #'recentf)
+(global-set-key (kbd "S-<f9>") #'projectile-switch-project)
+(global-set-key (kbd "<f9>") #'projectile-find-file-dwim)
+(global-set-key (kbd "C-<f9>") #'projectile-invalidate-cache)
+
 (global-set-key (kbd "C-x x l") #'global-display-line-numbers-mode)
 
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
