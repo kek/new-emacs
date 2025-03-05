@@ -9,7 +9,7 @@
 (save-place-mode 1)
 (global-auto-revert-mode 1)
 (setq global-auto-revert-non-file-buffers t)
-(global-display-line-numbers-mode 1)
+(global-display-line-numbers-mode -1)
 (global-display-fill-column-indicator-mode 0)
 
 (defun my/set-font ()
