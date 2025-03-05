@@ -192,3 +192,7 @@ targets."
 	  (typescript "https://github.com/tree-sitter/tree-sitter-typescript" "master" "typescript/src")
 	  (yaml "https://github.com/ikatyang/tree-sitter-yaml"))))
 
+(use-package expand-region :straight t
+  :init
+  (global-set-key (kbd "C-=") 'er/expand-region))
+
