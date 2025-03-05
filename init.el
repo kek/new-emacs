@@ -14,7 +14,7 @@
 
 (defun my/set-font ()
   (set-frame-font "Hack Nerd Font Mono" nil t)
-  (let ((font-size (if (eq system-type 'darwin) 140 120)))
+  (let ((font-size (if (eq system-type 'darwin) 150 120)))
     (set-face-attribute 'default nil :font "Hack Nerd Font Mono" :height font-size)))
 
 (defun my/load-file (file)
