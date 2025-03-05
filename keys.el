@@ -16,6 +16,7 @@
 (global-set-key (kbd "C-<f12>") #'projectile-invalidate-cache)
 
 (global-set-key (kbd "C-<f5>") #'my/toggle-theme)
+(global-set-key (kbd "C-x x l") #'global-display-line-numbers-mode)
 
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
 
