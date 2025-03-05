@@ -28,10 +28,12 @@
 
 (defun my/dark-theme ()
   (load-theme 'doom-moonlight t)
+  (disable-theme 'doom-earl-grey)
   (setq my/theme 'dark))
 
 (defun my/light-theme ()
-  (load-theme 'leuven t)
+  (load-theme 'doom-earl-grey t)
+  (disable-theme 'doom-moonlight)
   (setq my/theme 'light))
 
 (defun my/toggle-theme () (interactive)
